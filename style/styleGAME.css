@@ -1,3 +1,28 @@
 h1 {
 	font-family: 'Bungee Outline', cursive;
+	font-size: 70px;
+}
+
+/**********DIV STYLING********/
+.essentials {
+	font-size: 30px;
+	font-family: 'Bungee', cursive;
+	text-align: center;
+}
+
+.essentialsLeft {
+
+}
+
+.essentialsRight {
+}
+
+.score, .controls {
+	margin: 10px;
+	border: solid black 5px;
+}
+
+.start, .pause, .reset {
+	margin: 10px;
+	border: solid black 5px;
 }
