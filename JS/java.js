@@ -13,6 +13,8 @@ function setBG(){
   }
 }
 
+var startButton = document.getElementById('start');
+startButton.addEventListener('click', dropBox);
 
 
 function dropBox(){
@@ -88,6 +90,7 @@ function countdown() {
 	    }
     	tick();
 	}
+countdown();
 
 var reset = document.querySelector('.restart');
  console.log(reset);
@@ -99,5 +102,3 @@ var reset = document.querySelector('.restart');
   
  }
  resetGame();
-
-countdown();
