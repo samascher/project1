@@ -1,7 +1,12 @@
+body {
+	background-color: black;
+}
+
 h1 {
 	font-family: 'Bungee Outline', cursive;
 	font-size: 70px;
 	color: #E82D00;
+	margin: 20px 0px 20px 20px
 }
 
 /**********DIV STYLING********/
@@ -10,25 +15,31 @@ h1 {
 	font-size: 30px;
 	font-family: 'Bungee', cursive;
 	text-align: center;
+	margin-top: 184px;
 }
 
 .gameBoard {
 	height: 550px;
 	width: 100%;
-	border: 2px black solid;
+	border: 3px black solid;
 	text-align: center;
+	background-color: #87cefa;
 }
 
 .essentialsRight {
 	font-size: 30px;
 	font-family: 'Bungee', cursive;
 	text-align: center;
+	margin-top: 184px;
 }
 
 .score, .controls {
-	margin: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
 	border: solid #E82D00 5px;
+	background-color: white;
 	width: 185px;
+	padding: 0px;
 	display: block;
 }
 
@@ -36,6 +47,14 @@ h1 {
 	margin: 0 auto;
 	margin-bottom: 10px;
 	border: solid #E82D00 5px;
+	background-color: white;
 	width: 130px;
 	display: block;
+	padding: 0px;
+}
+
+.col-sm-4, .col-md-4, .col-lg-4 {
+	padding: 0px;
+	margin: 0 auto;
+	border: 0px;
 }

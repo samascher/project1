@@ -11,3 +11,7 @@ h1 {
 .play {
 	font-size: 100px;
 }
+
+ul {
+  list-style-type: none;
+}
