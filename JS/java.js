@@ -1,5 +1,4 @@
 var score = 0;
-var color = "blue";
 
 function random(min,max){
  	return Math.round(Math.random() * (max-min) + min);
@@ -44,9 +43,6 @@ function setBG(){
   }
 }
 
-var startButton = document.getElementById('start');
-startButton.addEventListener('click', runGame);
-
 
 function dropBox(){
   var length = random(100, ($(".game").width() - 100));
@@ -81,9 +77,14 @@ function dropBox(){
   });
 }
 
-for (i = 0; i < 10; i++) { 
-  dropBox();
-}
+//start button for the game
+var startButton = document.getElementById('start');
+  startButton.addEventListener('click', function() {
+    for (i = 0; i < 10; i++) { 
+      dropBox();
+      countdown();
+    }
+  });
 
 $(document).on('click', '.box', function(){
 
@@ -98,12 +99,8 @@ $(document).on('click', '.box', function(){
   $(this).remove();
 });
 
-var runGame = setInterval(function(){
-                for (i = 0; i < 10; i++) { 
-                  dropBox();
-                }  
-              }, 5000);
 
+//countdown from 60 seconds
 function countdown() {
     	var seconds = 60;
 	    function tick() {
@@ -111,17 +108,16 @@ function countdown() {
 	        seconds--;
 	        counter.innerHTML = (seconds < 10 ? "0" : "")  + String(seconds) + " seconds left";
 	        if( seconds > 0 ) {
-	            setTimeout(tick, 1000);
-	            draw();
-	   			update();
+	          setTimeout(tick, 1000);
 	        } else {
-	            alert("Game over");
-	            clearInterval(runGame);
+	          console.log("Game over");
+	          clearInterval(runGame);
 	        }
 	    }
     	tick();
 	}
 
+//reset game
 var reset = document.querySelector('.restart');
  console.log(reset);
  function resetGame () {
@@ -132,5 +128,3 @@ var reset = document.querySelector('.restart');
   
  }
  resetGame();
-
-  countdown();
