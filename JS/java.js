@@ -5,6 +5,37 @@ function random(min,max){
  	return Math.round(Math.random() * (max-min) + min);
 }
 
+/*image in landing change back and forth*/
+// function displayNextImage() {
+//               x = (x === images.length - 1) ? 0 : x + 1;
+//               document.getElementById("meatball").src = images[x];
+//           }
+
+//           function displayPreviousImage() {
+//               x = (x <= 0) ? images.length - 1 : x - 1;
+//               document.getElementById("rock").src = images[x];
+//           }
+
+//           function startTimer() {
+//               setInterval(displayNextImage, 3000);
+//           }
+
+//           var images = [], x = -1;
+//           images[0] = "https://lh6.ggpht.com/ISGeGaE-HYuTQ0qLxC10hmFKI0rTc_ZiTU8OYoqpt0_q7D3fKoW6tzllA-_wNi9mKPM=w300";
+//           images[1] = "http://www.bryanrock.com/application/files/7914/3349/4593/rock.png";
+// displayNextImage();
+
+// for (i = 0; i < 100000000; i ++){
+//     setInterval(displayNextImage, 3000);
+
+// }
+// function startTimer() {
+//               setInterval(displayNextImage, 3000);
+//           }
+
+
+
+
 function setBG(){
   if (Math.round(Math.random())){
     return "https://lh6.ggpht.com/ISGeGaE-HYuTQ0qLxC10hmFKI0rTc_ZiTU8OYoqpt0_q7D3fKoW6tzllA-_wNi9mKPM=w300";
@@ -14,7 +45,7 @@ function setBG(){
 }
 
 var startButton = document.getElementById('start');
-startButton.addEventListener('click', dropBox);
+startButton.addEventListener('click', runGame);
 
 
 function dropBox(){
@@ -90,7 +121,6 @@ function countdown() {
 	    }
     	tick();
 	}
-countdown();
 
 var reset = document.querySelector('.restart');
  console.log(reset);
@@ -102,3 +132,5 @@ var reset = document.querySelector('.restart');
   
  }
  resetGame();
+
+  countdown();

@@ -1,22 +1,29 @@
 body {
 	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
 
 h1 {
 	font-family: 'Bungee Outline', cursive;
 	font-size: 80px;
 	color: #E82D00;
+	margin: 40px 0 40px 0;
 }
 
 h2 {
 	font-family: 'Bungee Shade', cursive;
 	letter-spacing: 3px;
-	font-size: 50px;}
+	font-size: 50px;
+	margin: 40px 0 40px 0;
+}
 
 ul {
   list-style-type: none;
   font-family: 'Bungee', cursive;
   font-size: 35px;
+  padding: 0px;
+  margin: 40px 0 40px 0;
 }
 
 /******DIV STYLING******/
@@ -25,4 +32,16 @@ a {
 	font-family: 'Bungee Shade', cursive;
 	font-color: #E82D00;
 	text-decoration: none;
+}
+
+.images {
+	display: inline;
+	margin: 0 auto;
+	padding: 0px;
+	    white-space:nowrap;
+}
+
+.inline-block {
+   display: inline-block;
+   margin: 0 3px 0 3px;
 }
