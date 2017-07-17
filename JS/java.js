@@ -115,7 +115,7 @@ function countdown() {
 	        if( seconds > 0 ) {
 	          setTimeout(tick, 1000);
 	        } else {
-	          console.log("Game over");
+	          alert("Game over");
 	          clearInterval(runGame);
 	        }
 	    }

@@ -21,3 +21,4 @@ Scoring
 	The user will receive 1 point for every meatball caught and loose 1 point for every rock caught. Whatever user is able to catch the most amount of points in a single round (60 seconds), will have their score saved and be the new high score winner.
 
 Reflections
+	
