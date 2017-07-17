@@ -3,13 +3,14 @@ body {
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
+	background: url("http://cdn.pcwallart.com/images/raw-spaghetti-noodles-wallpaper-4.jpg");
 }
 
 /*****STYLES THE MEATBALL MADNESS HEADER AT THE TOP OF PAGE*****/
 h1 {
 	font-family: 'Bungee Outline', cursive;
 	font-size: 80px;
-	color: #E82D00;
+	color: #C01A00;
 	margin: 40px 0 40px 0;
 }
 
@@ -19,6 +20,7 @@ h2 {
 	letter-spacing: 3px;
 	font-size: 50px;
 	margin: 40px 0 40px 0;
+	color: #8B1A00;
 }
 
 /*****STYLES THE DIRECTIONS/RULES FOR THE GAME*****/
@@ -28,13 +30,14 @@ ul {
   font-size: 35px;
   padding: 0px;
   margin: 40px 0 40px 0;
+  color: #C01A00;
 }
 
 /******DIV STYLING******/
 a {
 	font-size: 50px;
 	font-family: 'Bungee Shade', cursive;
-	font-color: #E82D00;
+	font-color: black;
 	text-decoration: none;
 }
 
