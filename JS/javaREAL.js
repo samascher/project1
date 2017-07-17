@@ -68,7 +68,7 @@ function dropBox(){
   //random start for animation
   setTimeout(function(){
     thisBox.addClass("move");
-  }, random(0, 1000) );
+  }, random(0, 5000) );
   
   //remove this object when animation is over
   thisBox.one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
@@ -99,6 +99,12 @@ $(document).on('click', '.box', function(){
   $(this).remove();
 });
 
+// runGame
+var runGame = setInterval(function(){
+                for (i = 0; i < 10; i++) { 
+                  dropBox();
+                }  
+              }, 5000);
 
 //countdown from 60 seconds
 function countdown() {
