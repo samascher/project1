@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>MEATBALL MADNESS</title>
-		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade" rel="stylesheet">
-  		<link rel="stylesheet" href="style/styleGAME.css">
+	<title>MEATBALL MADNESS</title>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Bungee|Bungee+Shade" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="style/styleLAND.css">
 </head>
 <body>
-	<h1>MEATBALL MADNESS</h1>
+	<h1>Meatball Maddness</h1>
 
-	<div class="start">
-		<button id="start" onclick="promptMe()">START</button>
-	</div><br />
+	<!---These are images that display on the landing page-->
+	<div class="images">
+		<div class="inline-block">
+			<img src="https://lh6.ggpht.com/ISGeGaE-HYuTQ0qLxC10hmFKI0rTc_ZiTU8OYoqpt0_q7D3fKoW6tzllA-_wNi9mKPM=w300" alt="meatball" style="width:200px;height:200px" id="meatball">
 
-	<div class="restart">
-		<button>RESET</button>
+			<img src="http://www.bryanrock.com/application/files/7914/3349/4593/rock.png" alt="rock" style="width:200px;height:200px" id="rock">
+
+			<img src="https://lh6.ggpht.com/ISGeGaE-HYuTQ0qLxC10hmFKI0rTc_ZiTU8OYoqpt0_q7D3fKoW6tzllA-_wNi9mKPM=w300" alt="meatball" style="width:200px;height:200px" id="meatball">
+
+			<img src="http://www.bryanrock.com/application/files/7914/3349/4593/rock.png" alt="rock" style="width:200px;height:200px" id="rock">
+
+			<img src="https://lh6.ggpht.com/ISGeGaE-HYuTQ0qLxC10hmFKI0rTc_ZiTU8OYoqpt0_q7D3fKoW6tzllA-_wNi9mKPM=w300" alt="meatball" style="width:200px;height:200px" id="meatball">
+		</div>
 	</div>
 
-	<div class="game">
-		<div class="counter" id= "counter">00s</div>
-		<div class="score">0</div>
-	</div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-  <script src="JS/java.js"></script>
+	<!--direction class-->
+	<h2>Directions</h2>
+		<div class="rules">
+			<ul>
+				<li>Click meatballs, win points</li>
+				<li>Click rocks, loose points</li>
+			</ul>
+		</div>
+	<!--PLAY link to gamepage-->
+	<a href="indexGAME.html" class="play">PLAY</a> 
+	<script src="JS/java.js"></script>
 </body>
 </html>
