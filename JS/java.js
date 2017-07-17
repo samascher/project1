@@ -99,6 +99,11 @@ $(document).on('click', '.box', function(){
   $(this).remove();
 });
 
+var runGame = setInterval(function(){
+                for (i = 0; i < 10; i++) { 
+                  dropBox();
+                }  
+              }, 5000);
 
 //countdown from 60 seconds
 function countdown() {
@@ -109,8 +114,10 @@ function countdown() {
 	        counter.innerHTML = (seconds < 10 ? "0" : "")  + String(seconds) + " seconds left";
 	        if( seconds > 0 ) {
 	          setTimeout(tick, 1000);
+            draw();
+          update();
 	        } else {
-	          console.log("Game over");
+	          alert("Game over");
 	          clearInterval(runGame);
 	        }
 	    }
