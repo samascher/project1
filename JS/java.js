@@ -114,6 +114,8 @@ function countdown() {
 	        counter.innerHTML = (seconds < 10 ? "0" : "")  + String(seconds) + " seconds left";
 	        if( seconds > 0 ) {
 	          setTimeout(tick, 1000);
+            draw();
+          update();
 	        } else {
 	          alert("Game over");
 	          clearInterval(runGame);
