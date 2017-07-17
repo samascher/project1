@@ -1,19 +1,21 @@
 Project #1: The Game - [Working Title - Meatball Monster]
 
 https://trello.com/b/tq4uG30T/project-1
+https://samascher.github.io/project1/
 
 Game outline 
 
-	Objective of the game is for the player to move the bun (object in which you are "catching") left or right on the board to catch meatballs that decend from the sky. Once the player catches three meatballs in the bun, they win. There will also be rocks decending from the sky. If the player catches a rock on the first try, the game ends, and the player looses immediately. If the player catches any rocks after catching a meatball - it makes the meatball disappear. 
+	Objective of the game is for the player to move the bun (object in which you are "catching") left or right on the board to catch meatballs that decend from the sky. The timer is set to 60 seconds, and after the user clicks "start", rocks & meatballs begin decending from the sky. The user must catch/gather items by clicking the objects.
+
 User view 
 
-	Player will hit "start", at which point the game board will render. After 3 seconds, meatballs and rocks will begin decending from the sky. The user will use the A key or the L key to move the bun left or right, respectively. They will move under the meatballs to catch them, and away from the rocks, to avoid them. 
+	The player will hit "start", and then meatballs/rocks will begin decending from the sky. The user will use their mouse to move and click objects to "catch" them. Meatballs gain you 1 point, while rocks will cost you a loss of 1 point.å
 
 	Features
-		There is a START button to begin the game, a PAUSE button to freeze, and a RESET to play again. There will also be a SCORE button to reflect the users score. *Potentially LEVELS - where speed and number of meatballs decending/needed to complete the sandwich will increase*
+		There is a START button to begin the game and a RESET to play again. There will also be a SCORE button to reflect the users score. The user plays against themselves or friends, with the help of a high score tracker that records the highest score of the game played. 
 
 Language Use
-	The game will be created using HTML, CSS, and Javascript
+	The game will be created using HTML, CSS, and Javascript. CSS styles the landing page and game in terms of color, spacial relationships, and categorizes items into classes. Javascript allows for the functionality of the game - generating the meatball/rocks dropping. 
 
 Scoring
-	The user will receive 10 points for every meatball caught and loose 10 points for every rock caught. When the user reaches 30 points (or 3 meatballs) they win! 
+	The user will receive 1 point for every meatball caught and loose 1 point for every rock caught. Whatever user is able to catch the most amount of points in a single round (60 seconds), will have their score saved and be the new high score winner.

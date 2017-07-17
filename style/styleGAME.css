@@ -2,6 +2,10 @@
   margin: 0px;
 }
 
+body {
+  background-image: url("https://pixabay.com/p-315189/?no_redirect");
+}
+
 h1 {
   font-size: 80px;
   font-family: 'Bungee Shade', cursive;
