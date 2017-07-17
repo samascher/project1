@@ -21,4 +21,6 @@ Scoring
 	The user will receive 1 point for every meatball caught and loose 1 point for every rock caught. Whatever user is able to catch the most amount of points in a single round (60 seconds), will have their score saved and be the new high score winner.
 
 Reflections
-	
+	Originally, I wanted to make my game so that the user has to catch the object in another object (like a bun). My wireframe reflects this original idea. Once I began writing the code, and getting the basic functionality of the JS up and running, I realized how much I just liked to "click" the objects falling. After a click - they would disappear and it was seriously satisfying - like popping bubble wrap. 
+
+	For 2.0 - i'd like to get the highscore feature done and implemented. I'd also like to expand the number of obnects falling from the top of the field. 
