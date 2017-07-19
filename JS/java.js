@@ -1,3 +1,7 @@
+$(document).on('ready', function(){
+  console.log("IM WORKING");
+});
+
 var score = 0;
 
 function random(min,max){
